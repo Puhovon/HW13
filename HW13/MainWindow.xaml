@@ -4,9 +4,31 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW13"
+        xmlns:ctx="clr-namespace:HW13.DataContext"
+        d:DataContext="{ctx:MainPageContext}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel>
+            <DockPanel
+                Background="AntiqueWhite"
+                DockPanel.Dock ="Bottom"
+                Margin="10,0,10,10"
+                >
+                <TextBox
+                    Height="100"
+                    IsReadOnly="True"
+                    Text="{Binding LogString, Mode=OneWay}"
+                    Margin="10"
+                    Padding="10"/>
+            </DockPanel>
+            <Frame
+                NavigationUIVisibility="Hidden"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                x:Name="Frame"
+                Margin="10"
+                Background="AntiqueWhite"/>
+        </DockPanel>
     </Grid>
 </Window>

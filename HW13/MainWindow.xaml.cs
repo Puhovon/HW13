@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HW13.DataContext;
+using HW13.Frames;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,10 @@ namespace HW13
         public MainWindow()
         {
             InitializeComponent();
+            PageManager.I.Frame = Frame;
+            PageManager.I.Load<Index>(new IndexContext());
+
+            DataContext = new MainPageContext();
         }
     }
 }

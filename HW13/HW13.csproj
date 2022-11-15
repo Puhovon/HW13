@@ -55,8 +55,44 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Accounts\Account.cs" />
+    <Compile Include="Accounts\CommonAccount.cs" />
+    <Compile Include="Accounts\NotEnoughMoneyEx.cs" />
+    <Compile Include="BankSysCore.cs" />
+    <Compile Include="DataContext\ChooseClientPageContext.cs" />
+    <Compile Include="DataContext\ClientPageContext.cs" />
+    <Compile Include="DataContext\IndexContext.cs" />
+    <Compile Include="DataContext\MainPageContext.cs" />
+    <Compile Include="DataContext\PageDataContext.cs" />
+    <Compile Include="Data\Condition\PersonalConditions.cs" />
+    <Compile Include="Frames\ChooseClientPage.xaml.cs">
+      <DependentUpon>ChooseClientPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Frames\ClientPage.xaml.cs">
+      <DependentUpon>ClientPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\DepositAccount.cs" />
+    <Compile Include="Frames\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageManager.cs" />
     <Compile Include="Repos\Repository.cs" />
     <Compile Include="Repos\Test.cs" />
+    <Compile Include="Utils\NameGenerator.cs" />
+    <Compile Include="Utils\Randomizer.cs" />
+    <Compile Include="Utils\Singleton.cs" />
+    <Page Include="Frames\ChooseClientPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Frames\ClientPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Frames\Index.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
