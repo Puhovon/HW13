@@ -32,7 +32,6 @@ namespace HW13.Accounts
             OnPropertyChanged("MoneyString");
             MoneyAdd?.Invoke(this, amount);
         }
-        public event PropertyChangedEventHandler PropertyChanged;
         public event MoneyTransferDelegate MoneyTransfer;
 
         public event MoneyAddDelegate MoneyAdd;
@@ -40,6 +39,8 @@ namespace HW13.Accounts
         public delegate void MoneyTransferDelegate(Account from, Account to, decimal amount);
 
         public delegate void MoneyAddDelegate(Account to, decimal amount);
+
+        public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

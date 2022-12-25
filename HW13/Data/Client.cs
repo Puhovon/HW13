@@ -122,5 +122,6 @@ namespace HW13
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
     }
 }

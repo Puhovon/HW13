@@ -6,8 +6,5 @@ using System.Threading.Tasks;
 
 namespace HW13.Data
 {
-    public class PersonalConditions
-    {
-        protected decimal InterestRate = 6m;
-    }
+    public class PersonalConditions { protected decimal InterestRate = 6m; }
 }

@@ -76,8 +76,6 @@
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageManager.cs" />
-    <Compile Include="Repos\Repository.cs" />
-    <Compile Include="Repos\Test.cs" />
     <Compile Include="Utils\NameGenerator.cs" />
     <Compile Include="Utils\Randomizer.cs" />
     <Compile Include="Utils\Singleton.cs" />
