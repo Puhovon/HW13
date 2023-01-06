@@ -1,4 +1,4 @@
-﻿namespace HW13.Utils
+﻿namespace BankSys_ClassLibrary.Utils
 {
     public class NameGenerator
     {

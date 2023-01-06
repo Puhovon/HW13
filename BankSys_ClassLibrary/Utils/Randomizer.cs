@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HW13.Utils
+namespace BankSys_ClassLibrary.Utils
 {
     public static class Randomizer
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace HW13.Accounts
+namespace BankSys_ClassLibrary.Accounts
 {
     public abstract class Account : INotifyPropertyChanged
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW13.Data
+namespace BankSys_ClassLibrary.Data
 {
     public class PersonalConditions { protected decimal InterestRate = 6m; }
 }

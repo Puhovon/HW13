@@ -1,12 +1,12 @@
-﻿using HW13.Accounts;
-using HW13.Data;
+﻿using BankSys_ClassLibrary.Accounts;
+using BankSys_ClassLibrary.Data;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 
-namespace HW13
+namespace BankSys_ClassLibrary
 {
     public class Client : Client<PersonalConditions> { }
 
