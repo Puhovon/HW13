@@ -6,6 +6,7 @@ namespace HW13.Accounts
 {
     public abstract class Account : INotifyPropertyChanged
     {
+
         public Guid Id = Guid.NewGuid();
         public Client Owner;
         protected decimal _depositMoney = 0;
