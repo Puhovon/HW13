@@ -6,7 +6,7 @@ using HW13.Utils;
 
 namespace BankSys_ClassLibrary
 {
-    public class BankSys : Singleton<BankSysCore>
+    public class BankSys : Singleton<BankSys>
     {
         private List<Client> _clients = new List<Client>();
         public List<Client> Clients
@@ -23,7 +23,7 @@ namespace BankSys_ClassLibrary
                 {
                     Name = NameGenerator.RandomName,
                     Phone = string.Join("", "1234567890".ToCharArray().Select(t => Randomizer.Next(0, 9).ToString())),
-                    PersonalConditions = new Data.PersonalConditions(),
+                    PersonalConditions = new HW13.Data.PersonalConditions(),
                 };
                 var account = new CommonAccount
                 {

@@ -58,7 +58,6 @@
     <Compile Include="Accounts\Account.cs" />
     <Compile Include="Accounts\CommonAccount.cs" />
     <Compile Include="Accounts\NotEnoughMoneyEx.cs" />
-    <Compile Include="BankSysCore.cs" />
     <Compile Include="DataContext\ChooseClientPageContext.cs" />
     <Compile Include="DataContext\ClientPageContext.cs" />
     <Compile Include="DataContext\IndexContext.cs" />
