@@ -44,11 +44,5 @@
     <Compile Include="BankSys.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HW13\HW13.csproj">
-      <Project>{d885c11f-8477-4a13-a195-9314667a1f16}</Project>
-      <Name>HW13</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
