@@ -3,7 +3,7 @@
 namespace HW13.Accounts
 {
     [Serializable]
-    public class NotEnoughMoneyEx : Exception
+    internal class NotEnoughMoneyEx : Exception
     {
         public Client Client;
         public NotEnoughMoneyEx(Account account, decimal amount)

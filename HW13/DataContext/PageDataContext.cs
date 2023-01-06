@@ -1,12 +1,11 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using BankSys_ClassLibrary;
 
 namespace HW13.DataContext
 {
     public abstract class PageDataContext : INotifyPropertyChanged
     {
-        public BankSys BankSystem => BankSys.I;
+        public BankSysCore BankSystem => BankSysCore.I;
 
         
         public event PropertyChangedEventHandler PropertyChanged;

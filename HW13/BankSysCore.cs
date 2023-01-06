@@ -1,12 +1,11 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using HW13;
-using HW13.Accounts;
+﻿using HW13.Accounts;
 using HW13.Utils;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace BankSys_ClassLibrary
+namespace HW13
 {
-    public class BankSys : Singleton<BankSysCore>
+    public class BankSysCore : Singleton<BankSysCore>
     {
         private List<Client> _clients = new List<Client>();
         public List<Client> Clients
@@ -14,10 +13,10 @@ namespace BankSys_ClassLibrary
             get => _clients;
             set => _clients = value;
         }
-        public List<Account> Accounts => Clients.SelectMany(t => t.Accounts).ToList();
+        public List<Account> Accounts => Clients.SelectMany(t=>t.Accounts).ToList();
         protected override void Init()
         {
-            for (int i = 0; i < 10; i++)
+            for(int i = 0; i < 10; i++)
             {
                 var client = new Client
                 {
